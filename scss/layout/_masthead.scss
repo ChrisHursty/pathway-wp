@@ -1,0 +1,156 @@
+.masthead {
+	background-image: url('../img/hero-bg.jpg');
+	padding-top: 8rem;
+	padding-bottom: 6rem;
+
+	.container {
+		justify-content: space-between;
+
+		.text-container {
+			background-color: rgba(0, 0, 0, .22);
+			max-height: 300px;
+			padding: 20px;
+			width: 40%;
+		}
+
+		.masthead-heading {
+			font-size: 2.75rem;
+			line-height: 2.75rem;
+		}
+
+		.masthead-subheading {
+			font-size: 1.25rem;
+		}
+
+		.menu-container {
+			width: 40%;
+			ul {
+				list-style: none;
+
+				span {
+					@include linear-gradient(#404040, #121212);
+					display: block;
+					height: 70px;
+					margin-right: 15px;
+					width: 100px;
+				}
+
+				a {
+					color: $white;
+					font-family: $headings-font-family;
+					font-size: 2.1rem;
+				}
+
+				li {
+					align-items: center;
+					box-shadow: 8px 4px 4px 0px rgba(0,0,0,0.35);
+					display: flex;
+					flex-direction: row;
+					justify-content: flex-start;
+					margin: 10px 0;
+					text-align: center;
+
+					&.apartment {
+						@include linear-gradient(#92d18e, #29cb28);
+						span {
+							background: #121212;
+							background-image: url('../img/icon-apartment.png');
+							background-image: url('../img/icon-apartment.png'), linear-gradient(#404040, #121212);
+							background-position: 13px 6px;
+							background-repeat: no-repeat;
+							background-size: 76px 55px;
+						}
+					}
+
+					&.single-family {
+						@include linear-gradient(#9a8dd6, #7e2dd1);
+						span {
+							background: #121212;
+							background-image: url('../img/icon-single-family.png');
+							background-image: url('../img/icon-single-family.png'), linear-gradient(#404040, #121212);
+							background-position: 23px 5px;
+							background-repeat: no-repeat;
+							background-size: 54px 60px;
+						}
+					}
+
+					&.offices {
+						@include linear-gradient(#ff9247, #ff3014);
+						span {
+							background: #121212;
+							background-image: url('../img/icon-office.png');
+							background-image: url('../img/icon-office.png'), linear-gradient(#404040, #121212);
+							background-position: 13px 6px;
+							background-repeat: no-repeat;
+							background-size: 76px 55px;
+						}
+					}
+
+					&.strip-malls {
+						@include linear-gradient(#ffc954, #ff9818);
+						span {
+							background: #121212;
+							background-image: url('../img/icon-strip-mall.png');
+							background-image: url('../img/icon-strip-mall.png'), linear-gradient(#404040, #121212);
+							background-position: 13px 13px;
+							background-repeat: no-repeat;
+							background-size: 74px 38px;
+						}
+					}
+
+					&.hotels {
+						@include linear-gradient(#79dbf1, #27c5f0);
+						span {
+							background: #121212;
+							background-image: url('../img/icon-hotel.png');
+							background-image: url('../img/icon-hotel.png'), linear-gradient(#404040, #121212);
+							background-position: 35px 3px;
+							background-repeat: no-repeat;
+							background-size: 34px 64px;
+						}
+					}
+
+					&.warehouses {
+						@include linear-gradient(#ff515a, #ff1a1d);
+						span {
+							background: #121212;
+							background-image: url('../img/icon-warehouse.png');
+							background-image: url('../img/icon-warehouse.png'), linear-gradient(#404040, #121212);
+							background-position: 13px 6px;
+							background-repeat: no-repeat;
+							background-size: 76px 55px;
+						}
+					}
+
+					&.vacant {
+						@include linear-gradient(#ee70e9, #ef24de);
+						span {
+							background: #121212;
+							background-image: url('../img/icon-vacant.png');
+							background-image: url('../img/icon-vacant.png'), linear-gradient(#404040, #121212);
+							background-position: 22px 5px;
+							background-repeat: no-repeat;
+							background-size: 62px 64px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.masthead {
+		padding-top: 8rem;
+		padding-bottom: 6rem;
+		height: 728px;
+
+		.masthead-heading {
+			font-size: 4rem;
+			line-height: 3.5rem;
+		}
+		.masthead-subheading {
+			font-size: 1.5rem;
+		}
+	}
+}

@@ -1,0 +1,18 @@
+ul#menu-property-styles {
+	list-style: none;
+
+	li {
+		margin: 8px 0;
+		text-align: center;
+
+		a {
+			@include linear-gradient(#a6c9e4, #497ba3);
+			box-shadow: 4px 4px 4px 0px rgba(0,0,0,0.35);
+			color: $white;
+			display: block;
+			font-family: $headings-font-family;
+			font-size: 2.1rem;
+			padding: 6px 0;
+		}
+	}
+}

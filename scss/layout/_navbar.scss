@@ -1,0 +1,79 @@
+// Styling for the Nav
+#mainNav {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	font-family: "Arial Narrow", Arial, sans-serif;
+	font-size: 2rem;
+	font-weight: 400;
+
+	.navbar-brand {
+		color: $white;
+	}
+
+	.navbar-nav {
+		margin-top: 1rem;
+
+		li {
+
+			a {
+				color: $white;
+
+				&:hover {
+					color: $black;
+				}
+
+				&:active,
+				&:focus {
+					color: $black;
+				}
+
+				&.active {
+					color: $primary;
+				}
+			}
+		}
+	}
+
+	.navbar-toggler {
+		font-size: 80%;
+		padding: 0.8rem;
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	#mainNav {
+		border-bottom: 12px solid $highlight;
+		padding-top: .5rem;
+		padding-bottom: .5rem;
+		transition: padding-top 0.3s, padding-bottom 0.3s;
+
+		.navbar-brand {
+			font-size: 1.75em;
+			transition: font-size 0.3s;
+		}
+
+		.navbar-nav {
+			margin-top: 0;
+		}
+
+		.navbar-nav > li.nav-item > a.nav-link.active {
+			color: $white;
+			background: $primary;
+				&:active,
+				&:focus,
+				&:hover {
+					color: $white;
+					background: $primary;
+				}
+			}
+		}
+
+		#mainNav.navbar-shrink {
+			padding-top: 0.5rem;
+			padding-bottom: 0.5rem;
+
+		.navbar-brand {
+			font-size: 1.5em;
+		}
+	}
+}
